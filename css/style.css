@@ -209,6 +209,11 @@ body {
   margin: 20px 0;
 }
 
+.aside__div-button:hover {
+  scale: 1.05;
+  transition: 0.5s;
+}
+
 
 /*********** FOOTER **************/
 
@@ -294,6 +299,9 @@ body {
 
 /************* VISUAL ELEMENTS **************/
 
+a[href="#"]:hover {
+  border-bottom: 1px solid;
+}
 
 .purple-ball {
   position: absolute;
@@ -649,7 +657,6 @@ body {
 
 
   /************* VISUALS *************/
-
   
   .purple-ball {
     position: absolute;
