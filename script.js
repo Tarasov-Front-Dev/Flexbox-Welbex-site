@@ -1,6 +1,5 @@
 // Вставить перенос строки в слоган
 const targetSpan = document.querySelector('.main__prime-slogan span')
-console.log(window.innerWidth)
 
 if (document.documentElement.clientWidth < 768) {
   targetSpan.insertAdjacentHTML("beforebegin", '<br>')
