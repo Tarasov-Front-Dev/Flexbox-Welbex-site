@@ -408,11 +408,6 @@ a[href="#"]:hover {
 
  /************** < 1024 ****************/
 @media (max-width: 1023.98px) {
-  html, body {
-    overflow-x: hidden !important;
-    max-width: 100%;
-  }
-
   .page__header {
     align-items: center;
   }
