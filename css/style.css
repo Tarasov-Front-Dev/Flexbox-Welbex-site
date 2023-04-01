@@ -518,7 +518,7 @@ a[href="#"]:hover {
     align-items: center;
     font-size: 12px;
     text-transform: uppercase;
-    background: rgb(0, 0, 0);
+    background: var(--bg-color);
   }
 
   .header__nav {
@@ -633,7 +633,7 @@ a[href="#"]:hover {
     margin-left: -80px;
     margin-right: -80px;
     padding: 40px 80px 0;
-    background: rgb(0, 0, 0);
+    background: var(--bg-color);
     flex-flow: column nowrap;
   }
 
