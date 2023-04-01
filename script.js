@@ -26,3 +26,6 @@ const targetH2Last = document.querySelector('.aside__promo div:last-of-type h2')
 if (document.documentElement.clientWidth < 768) {
   targetH2Last.innerHTML = 'МЕСЯЦ AMOCRM'
 }
+
+const vw = document.documentElement.offsetWidth * 0.01
+document.documentElement.style.setProperty('--vw', `${vw}px`)

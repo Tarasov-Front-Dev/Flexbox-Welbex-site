@@ -14,21 +14,19 @@
 }
 
 body {
+  position: relative;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-between;
-  align-items: stretch;
   background-color: var(--bg-color);
 }
 
 .body__wrapper {
-  max-width: 1140px;
+  max-width: 1220px;
+  height: 100%;
   margin: 0 auto;
   padding: 0 40px;
-  position: relative;
-  overflow: hidden;
+  display: flex;
+  flex-flow: column nowrap;
 }
 
 /*********** HEADER **************/
@@ -114,11 +112,12 @@ body {
 /*********** MAIN **************/
 
 .page__main {
+  flex: 1 1 auto;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: flex-start;
-  margin-top: 90px;
+  margin-top: 97px;
 }
 
 .main__section {
@@ -246,7 +245,7 @@ body {
 .footer__about__ul,
 .footer__menu__ul {
   height: 153px;
-  margin-top: 16px;
+  margin-top: 19px;
   margin-bottom: auto;
   padding: 0;
   display: flex;
@@ -258,16 +257,18 @@ body {
 
 .footer__about__ul li,
 .footer__menu__ul li {
-  margin-bottom: 12px;
-  min-width: 187px;
+  margin-bottom: 11px;
+  min-width: 194px;
 }
 
 .footer__menu {
-  height: 153px;
+  margin-left: -15px;
   flex: 0 0 455px;
+  height: 153px;
 }
 
 .footer__contacts {
+  margin-top: 3px;
   flex: 0 0 280px;
   display: flex;
   flex-flow: column nowrap;
@@ -411,10 +412,10 @@ a[href="#"]:hover {
  /************** < 1024 ****************/
 @media (max-width: 1023.98px) {
   .page__header {
-    align-items: center;
+    margin-top: 25px;
   }
 
-  .header__nav {    
+  .header__nav {
     flex: 0 1 440px;
   }
 
@@ -490,18 +491,19 @@ a[href="#"]:hover {
 
   .body__wrapper {
     padding: 0 16px;
+    max-width: 640px;
   }
 
 
   /******************* HEADER ******************/
 
   .page__header {
-    height: 55px;
     margin-top: 0;
-    margin-left: -16px;
-    margin-right: -16px;
-    padding: 20px 16px;
-    align-items: flex-start;
+    margin-left: -80px;
+    margin-right: -80px;
+    padding: 0 80px;
+    flex: 0 0 55px;
+    align-items: center;
     font-size: 12px;
     text-transform: uppercase;
     background: rgb(0, 0, 0);
@@ -561,7 +563,8 @@ a[href="#"]:hover {
 
   .main__aside {
     margin-top: 10px;
-    flex: 0 0 178px;
+    flex: 0 0 auto;
+    max-width: 600px;
     text-align: left;
   }
 
@@ -571,14 +574,17 @@ a[href="#"]:hover {
     gap: 0 15px;
   }
 
-  .aside__promo div:nth-of-type(3) {
-    order: -1;
-  }
-
   .aside__promo div {
     flex: 0 0 144px;
     margin-bottom: 13px;
     position: relative;
+  }
+
+  .aside__promo div:nth-of-type(3) {
+    order: -1;
+  }
+  
+  .aside__promo div:nth-of-type(1) {
   }
   
   .aside__promo div::before {
@@ -611,10 +617,10 @@ a[href="#"]:hover {
   /**************** FOOTER ***************/
 
   .page__footer {
-    margin-top: -10px;
-    margin-left: -16px;
-    margin-right: -16px;
-    padding: 40px 16px 0;
+    margin-top: 45px;
+    margin-left: -80px;
+    margin-right: -80px;
+    padding: 40px 80px 0;
     background: rgb(0, 0, 0);
     flex-flow: column nowrap;
   }
@@ -627,7 +633,8 @@ a[href="#"]:hover {
     height: 70px;
   }
 
-  .footer__menu {    
+  .footer__menu {
+    margin-left: 0;
     flex: 0 0 211px;
   }
 
@@ -667,7 +674,7 @@ a[href="#"]:hover {
     width: 40px;
     height: 40px;
     left: 296px;
-    top: 236px;
+    top: 285px;
     
     background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(236, 208, 255, 0.64) 0%, rgba(161, 93, 207, 0.24) 59.67%, rgba(118, 49, 164, 0.208) 78.59%, rgba(86, 24, 128, 0.232) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
     box-shadow: 3px 6px 27px -10px rgba(177, 118, 217, 0.25);
@@ -757,6 +764,19 @@ a[href="#"]:hover {
     /* backdrop-filter: blur(7.5px); */
   }
 
+}
+
+@media (max-width: 424.98px) {
+  .aside__promo div {
+    flex: 0 0 124px;
+  }
+  .aside__promo div:nth-child(4) {
+    flex: 0 0 144px;
+  }
+  .aside__slogan span {
+    text-transform: lowercase;
+    letter-spacing: -0.1px;
+  }
 }
 
 @media (max-width: 374px) {  
