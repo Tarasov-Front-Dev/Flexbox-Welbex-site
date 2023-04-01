@@ -15,7 +15,7 @@
 
 body {
   margin: 0;
-  padding: 0 40px;
+  padding: 0;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
@@ -26,7 +26,9 @@ body {
 .body__wrapper {
   max-width: 1140px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 40px;
+  position: relative;
+  overflow: hidden;
 }
 
 /*********** HEADER **************/
@@ -483,8 +485,11 @@ a[href="#"]:hover {
 @media (max-width: 767.98px) {
 
   body {
-    padding: 0 16px;
     background-image: url('../src/img/bg-mob-img.png');
+  }
+
+  .body__wrapper {
+    padding: 0 16px;
   }
 
 
@@ -510,6 +515,10 @@ a[href="#"]:hover {
   .header__nav__ul {
     justify-content: space-between;
     gap: 0 0;
+  }
+
+  .header__nav__ul li:nth-child(4) {
+    margin-right: 0;
   }
 
   .header__nav__ul li:nth-child(5) {
