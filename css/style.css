@@ -126,7 +126,7 @@ body {
   flex: 0 0 362px;
 }
 
-.main__section h1 {
+.main__section h2 {
   margin-top: -4px;
   font-family: var(--second-font);
   font-size: 48px;
@@ -134,7 +134,7 @@ body {
   line-height: 58px;
 }
 
-.main__section h1 span {
+.main__section h2 span {
   font-weight: 900;
   background: var(--bg-gradient);
   -webkit-background-clip: text;
@@ -567,7 +567,7 @@ a[href="#"]:hover {
     flex: 0 0 225px;
   }
 
-  .main__section h1 {
+  .main__section h2 {
     font-size: 36px;
     line-height: 44px;
     margin-bottom: 20px;
